@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "This version of the snap is broken!" >&2
+exit 1

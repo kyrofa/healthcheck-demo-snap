@@ -1,0 +1,17 @@
+name: rollback-demo-kyrofa
+version: 0.1.0
+grade: devel
+confinement: strict
+summary: Rollback Demo
+description: |
+  Demonstration of rollbacks using the configure hook as a health check.
+
+architectures: [all]
+
+apps:
+  test:
+    command: echo "I\'m the good version"
+
+parts:
+  my-part:
+    plugin: nil
